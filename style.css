@@ -30,3 +30,19 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.panel1 {
+  background-image: url('./assets/awesome.jpg');
+}
+.panel2 {
+  background-image: url('./assets/live.jpg');
+}
+.panel3 {
+  background-image: url('./assets/create.jpg');
+}
+.panel4 {
+  background-image: url('./assets/growth.jpg');
+}
+.panel5 {
+  background-image: url('./assets/friends.jpg');
+}
