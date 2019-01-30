@@ -19,6 +19,7 @@ body {
   overflow: hidden;
   display: flex;
 }
+
 .panel {
   background: #6b0f9c;
   box-shadow: insert 0 0 0 5px rgba(255, 255, 255, 0.1);
@@ -31,6 +32,10 @@ body {
   background-size: cover;
   background-position: center;
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .panel1 {
@@ -54,6 +59,27 @@ body {
   margin: 0;
   width: 100%;
   transition: tansform 0.5s;
+  border: solid red 1px;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open.active > *:first-child {
+  transform: translateY(0);
+}
+
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open.active > *:last-child {
+  transform: translateY(0);
 }
 
 .panel p {
@@ -67,5 +93,6 @@ body {
 }
 
 .panel.open {
+  flex: 5;
   font-size: 40px;
 }
